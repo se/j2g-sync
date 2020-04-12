@@ -9,5 +9,10 @@
     "gitlab": "^4.4.1",
     "jira-connector": "^2.10.0",
     "request-promise": "^4.2.4"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/serverless offline -s dev",
+    "debug": "export SLS_DEBUG=* && node --debug ./node_modules/.bin/serverless offline -s dev",
+    "test": "mocha"
   }
 }

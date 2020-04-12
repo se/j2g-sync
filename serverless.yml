@@ -27,8 +27,16 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-#  environment:
-#    variable1: value1
+environment:
+  AWSX_REGION: ${env:J2G_AWSX_REGION}
+  AWSX_ACCESS_KEYID: ${env:J2G_AWSX_ACCESS_KEYID}
+  AWSX_SECRET_KEY: ${env:J2G_AWSX_SECRET_KEY}
+  GITLAB_TOKEN: ${env:J2G_GITLAB_TOKEN}
+  JIRA_HOST: ${env:J2G_JIRA_HOST}
+  JIRA_USER: ${env:J2G_JIRA_USER}
+  JIRA_PASSWORD: ${env:J2G_JIRA_PASSWORD}
+  GITLAB_TOKEN_VALUE: ${env:J2G_GITLAB_TOKEN_VALUE}
+  J2G_TOKEN_VALUE: ${env:J2G_J2G_TOKEN_VALUE}
 
 # you can add packaging information here
 #package:
